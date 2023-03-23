@@ -243,21 +243,23 @@ def user_stats(df):
 
 
 def raw_data_display(df):
-    """This function is used to display 5 rows of raw data from the dataframe at a time."""
+    """This function is used to display 10 rows of raw data from the dataframe at a time."""
     print("--------------------- Raw data display -------------------------")
+    number_of_raw_data_items = 10
+
     start = 0
-    end = 5
+    end = number_of_raw_data_items
 
     while True:
         print(df[start:end])
 
         cont = user_continue_check(
-            "\nWould you like the next 5 rows of raw data? Enter yes or no.\n")
+            "\nWould you like the next " + str(number_of_raw_data_items) + " rows of raw data? Enter yes or no.\n")
         if cont == False:
             break
 
-        start += 5
-        end += 5
+        start += number_of_raw_data_items
+        end += number_of_raw_data_items
 
 
 def user_continue_check(display_message):
