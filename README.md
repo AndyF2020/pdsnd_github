@@ -19,6 +19,7 @@ The utility takes user input to allow the results to be filtered by city, month 
 The utiliy produces output timings to show how long calculations took.
 
 The utility is also able to display the raw bikeshare data 5 rows at a time.
+
 ---
 ### Files used
   * chicago.csv
