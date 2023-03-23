@@ -45,7 +45,6 @@ VALID_USER_INPUTS = {
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
-
     Returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
@@ -160,7 +159,7 @@ def station_stats(df):
     most_common_ending_station = df['End Station'].mode()[0]
     print('Most Popular Ending Station', most_common_ending_station)
 
-    # display most frequent combination of start station and end station trip
+    # display most frequent combination of starting and ending station
     most_common_station_combination = (
         df['Start Station'] + ','+df['End Station']).mode()[0]
     print('Most Popular Starting/Ending Combination',
