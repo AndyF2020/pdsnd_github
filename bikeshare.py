@@ -249,8 +249,10 @@ def user_stats(df):
 def raw_data_display(df):
     """This function is used to display 10 rows of raw data from the dataframe at a time."""
     print("--------------------- Raw data display -------------------------")
+    number_of_raw_data_items = 10
+
     start = 0
-    end = 10
+    end = number_of_raw_data_items
 
     while True:
         print(df[start:end])
@@ -260,8 +262,8 @@ def raw_data_display(df):
         if cont == False:
             break
 
-        start += 10
-        end += 10
+        start += number_of_raw_data_items
+        end += number_of_raw_data_items
 
 
 def user_continue_check(display_message):
