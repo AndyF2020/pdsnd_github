@@ -27,6 +27,8 @@ The utility is also able to display the raw bikeshare data 5 rows at a time.
   * new_york_city.csv
   * bikeshare.py
 
+Note the csv files are not checked into GitHub
+
 
 ---
 ### Credits
