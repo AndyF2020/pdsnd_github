@@ -258,7 +258,7 @@ def raw_data_display(df):
         print(df[start:end])
 
         cont = user_continue_check(
-            "\nWould you like the next 5 rows of raw data? Enter yes or no.\n")
+            "\nWould you like the next " + str(number_of_raw_data_items) + " rows of raw data? Enter yes or no.\n")
         if cont == False:
             break
 
